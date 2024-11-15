@@ -12,14 +12,31 @@ def peg(col,row,hit):
         pegx = 70
     else:
         pegx = 160
+#============================
+    if row == 1:
+        pegy = -180
+    elif row == 2:
+        pegy = -90
+    elif row == 3:
+        pegy = 0
+    elif row == 4:
+        pegy = 90
+    else:
+        pegy = 180
+
+#==========================
+    if hit == 1:
+        fillcolor("red")
+        pencolor("red")
+    else:
+        fillcolor("white")
+        pencolor("white")
 
 
 
 
     penup()
-    pencolor("white")
-    fillcolor("white")
-    goto(pegx,0)
+    goto(pegx,pegy)
     pendown()
     begin_fill()
     circle(20,360)
