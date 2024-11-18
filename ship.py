@@ -35,11 +35,21 @@ def shipPos(pos):
     circle(20,360)
     end_fill()
 def posgen():
-    xpos = random.randint(1,5)
-    ypos = random.randint(1,5)
+    #direction = random.randint(0,1)
+    direction = 1
 
-    poslist = [xpos,ypos]
-    return poslist
+    if direction == 1:
+        anchorx = random.randint(0,5)
+        anchory = random.randint(0, 5)
+        num1 = anchorx
+        num2 = anchorx - 1
+        num3 = anchorx - 2
+
+        y = "c"
+        shiplist = [num1,y,num2,y,num3,y]
+        return shiplist
+
+
 def shipdraw(shiplist):
     num1 = shiplist[1]
     num2 = shiplist[3]
