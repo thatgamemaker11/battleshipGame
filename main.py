@@ -3,15 +3,33 @@ import peg
 import ship
 
 board.board()
-peg.peg(5,1,1)
-peg.peg(4,2,0)
-peg.peg(3,3,1)
-peg.peg(2,4,0)
-peg.peg(1,5,1)
 
-#list = ["a",2,"a",3,"a",4]
 list = ship.posgen()
+print(list)
 ship.shipdraw(list)
+
+
+print("=============================================")
+col = input("what column would you like to try?")
+row = input("what Row? would you like to try?")
+print("=============================================")
+
+row = int(row)
+
+numbers = [1, 2, 3, 4, 5]
+letters = ["a", "b", "c", "d", "e"]
+
+if col in letters:
+    print("not a letter") #######fix
+
+
+if row in numbers:
+    print("not a number")
+
+
+peg.peg(col,row,1)
+
+
 
 
 
