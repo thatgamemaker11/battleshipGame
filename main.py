@@ -9,15 +9,11 @@ peg.peg(3,3,1)
 peg.peg(2,4,0)
 peg.peg(1,5,1)
 
-pos = ship.posgen()
+#list = ["a",2,"a",3,"a",4]
+list = ship.posgen()
+ship.shipdraw(list)
 
-ship.shipPos(pos)
-pos[1] = pos[1] + 1
-ship.shipPos(pos)
-pos[1] = pos[1] - 2
-ship.shipPos(pos)
 
-print(pos)
 
 
 
