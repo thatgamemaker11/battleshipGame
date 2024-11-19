@@ -17,5 +17,6 @@ ship.shipdraw(list)
 
 
 
+
 input()
 
