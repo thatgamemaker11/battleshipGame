@@ -17,7 +17,7 @@ row = input("what Row? would you like to try?")
 print("=============================================")
 
 row = int(row)
-col = numtolet.translet(col)
+#col = numtolet.translet(col)
 
 numbers = [1, 2, 3, 4, 5]
 letters = ["a", "b", "c", "d", "e"]
@@ -29,20 +29,20 @@ letters = ["a", "b", "c", "d", "e"]
 #     print("not a number")
 #=========================================
 
-hits = 0
-letcol = col -1
-letcol = numtolet.transnum(letcol)
-checkrow = row -1
-print(letcol)
-print(checkrow)
-if list[0] == letcol and list[1] == row:
-    print("hit")
-elif list[2] == letcol and list[3] == row:
-    print("hit")
-elif list[4] == letcol and list[5] == row:
-    print("hit")
-else:
-    print("miss")
+# hits = 0
+# letcol = col
+# letcol = numtolet.transnum(letcol)
+# checkrow = row
+# print(letcol)
+# print(checkrow)
+# if list[0] == letcol and list[1] == row:
+#     print("hit")
+# elif list[2] == letcol and list[3] == row:
+#     print("hit")
+# elif list[4] == letcol and list[5] == row:
+#     print("hit")
+# else:
+#     print("miss")
 
 
 
