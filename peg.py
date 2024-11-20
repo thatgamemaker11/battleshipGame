@@ -14,15 +14,15 @@ def peg(col,row,hit):
         pegx = 160
 #============================
     if row == 1:
-        pegy = -180
+        pegy = 180
     elif row == 2:
-        pegy = -90
+        pegy = 90
     elif row == 3:
         pegy = 0
     elif row == 4:
-        pegy = 90
+        pegy = -90
     else:
-        pegy = 180
+        pegy = -180
 
 #==========================
     if hit == 1:

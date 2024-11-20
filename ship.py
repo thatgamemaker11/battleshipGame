@@ -4,24 +4,24 @@ def shipPos(pos):
     shipcol = pos[0]
     shiprow = pos[1]
 
-    if shipcol == 1:
+    if shipcol == 0:
         shippegx = -200
-    elif shipcol == 2:
+    elif shipcol == 1:
         shippegx = -110
-    elif shipcol == 3:
+    elif shipcol == 2:
         shippegx = -20
-    elif shipcol == 4:
+    elif shipcol == 3:
         shippegx = 70
     else:
         shippegx = 160
     # ============================
-    if shiprow == 1:
+    if shiprow == 0:
         shippegy = -180
-    elif shiprow == 2:
+    elif shiprow == 1:
         shippegy = -90
-    elif shiprow == 3:
+    elif shiprow == 2:
         shippegy = 0
-    elif shiprow == 4:
+    elif shiprow == 3:
         shippegy = 90
     else:
         shippegy = 180
