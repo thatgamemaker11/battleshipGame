@@ -5,7 +5,8 @@ import ship
 
 board.board()
 
-list = ship.posgen()
+#list = ship.posgen()
+list = ['c', 1, 'c', 2, 'c', 3]
 print(list)
 ship.shipdraw(list)
 
@@ -29,18 +30,21 @@ letters = ["a", "b", "c", "d", "e"]
 #=========================================
 
 hits = 0
-letcol = col
+letcol = col -1
 letcol = numtolet.transnum(letcol)
-checkrow = row +1
+checkrow = row -1
 print(letcol)
 print(checkrow)
-if list[0] == letcol or list[2] == letcol or list[4] == letcol:
-    if list[1] == row or list[3] == row or list[5] == row:
-        print("hit")
-    else:
-        print('miss')
+if list[0] == letcol and list[1] == row:
+    print("hit")
+elif list[2] == letcol and list[3] == row:
+    print("hit")
+elif list[4] == letcol and list[5] == row:
+    print("hit")
 else:
     print("miss")
+
+
 
 
 peg.peg(col,row,1)

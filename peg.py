@@ -2,13 +2,13 @@ from turtle import *
 def peg(col,row,hit):
 
 
-    if col == 1:
+    if col == "a":
         pegx = -200
-    elif col == 2:
+    elif col == "b":
         pegx = -110
-    elif col == 3:
+    elif col == "c":
         pegx = -20
-    elif col == 4:
+    elif col == "d":
         pegx = 70
     else:
         pegx = 160
@@ -28,9 +28,12 @@ def peg(col,row,hit):
     if hit == 1:
         fillcolor("red")
         pencolor("red")
-    else:
+    elif hit == 2:
         fillcolor("white")
         pencolor("white")
+    else:
+        fillcolor("black")
+        pencolor("black")
     penup()
     goto(pegx,pegy)
     pendown()
