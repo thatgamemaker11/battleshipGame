@@ -1,7 +1,9 @@
-list = [1,1]
+from turtle import*
+import art
+import board
+import numtolet
+import peg
+import ship
 
-print(list)
 
-list[1] = list[1] + 1
-
-print(list)
+art.win()

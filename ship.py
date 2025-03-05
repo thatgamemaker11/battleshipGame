@@ -32,9 +32,9 @@ def shipPos(pos):
     fillcolor("grey")
     goto(shippegx,shippegy)
     pendown()
-    begin_fill()
-    circle(20,360)
-    end_fill()
+    #begin_fill()
+    #circle(20,360)
+    #end_fill()
 def posgen():
     direction = random.randint(0,1)
 
