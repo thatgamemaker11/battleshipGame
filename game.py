@@ -8,9 +8,9 @@ import ship
 
 
 def main():
-    import Bscreen
+
     board.board()
-    Bscreen.disp()
+
 
     #list = ship.posgen()
     list = ['d', 1, 'd', 2, 'd', 3]
